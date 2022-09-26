@@ -1,0 +1,64 @@
+<html>
+<body>
+
+
+ <form action="action_page.php" method="post">
+  <div class="imgcontainer">
+  <style>
+body {
+  background-image: url('img4.webp');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+  <br>
+  <h1>WELCOME TO FUEL RUSH</h1>
+  </div>
+  <br>
+  <style>
+h1 {text-align: center;}
+p {text-align: center;}
+</style>
+  <div class="container">
+    <p><label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required></p>
+    <br>
+    <br>
+    <p><label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required></p>
+    <br>
+    <br>
+    <p><button onclick="login()" type="submit">Login</button></p>
+    <script>
+    function login()
+    {
+    	//location.replace("file:///C:/Users/user/Desktop/fff/head3.html")
+		location.href="./head3.html"
+    }
+    </script>
+    <br>
+    <p><label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label></p>
+  </div>
+    <br>
+    <br>
+  <div class="container" style="background-color:#f1f1f1">
+    <p><button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span></p>
+    <script>
+    function register()
+    {
+    	//location.replace("file:///C:/Users/user/Desktop/fff/head2.html")
+		location.href="./head2.html"
+    }
+    </script>
+  </div>
+  <br>
+  <br>
+  <p><button onclick="register()" type="submit">Register</button></p>
+</form> 
+
+</body>
+</html>

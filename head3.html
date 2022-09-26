@@ -1,0 +1,76 @@
+<html>
+<body>
+
+
+ <form>
+  <div class="imgcontainer">
+  <style>
+body {
+  background-image: url('img4.webp');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+  <br>
+  <h1>WELCOME TO FUEL RUSH</h1>
+  </div>
+  <br>
+  <style>
+h1 {text-align: center;}
+h2 {text-align: center;}
+p {text-align: center;}
+</style>
+  <div class="container">
+  <h2>NEARBY FUEL STATIONS LIST</h2>
+
+<center>
+<input type="checkbox" id="Hindustan Petroleum" name="Hindustan Petroleum">
+  <label for="vehicle1">Hindustan Petroleum</label><br>
+  <input type="checkbox" id="Indian Oil" name="Indian Oil">
+  <label for="vehicle2">Indian Oil</label><br>
+  <input type="checkbox" id="Bharat Petroleum" name="Bharat Petroleum">
+  <label for="vehicle2">Bharat Petroleum</label><br>
+  <input type="checkbox" id="Essar" name="Essar">
+  <label for="vehicle3"> Essar</label><br><br>
+</center>
+<br>
+    <p><label for="uname"><b>Vehicle Number</b></label>
+    <input type="text" placeholder="Enter Vehicle Number" name="uname" required></p>
+    <br>
+    <br>
+    <p><label for="psw"><b>Amount</b></label>
+    <input type="password" placeholder="Enter Amount" name="psw" required></p>
+    <br>
+    <br>
+    <p><button onclick="UserAction()"type="submit">Pay</button></p>
+    <br>
+    <br>
+	<label id='test'></label>
+	
+	
+</form> 
+<script>
+    function pay()
+    {
+    	//location.replace("file:///C:/Users/user/Desktop/fff/head2.html")
+		location.href="./head4.html"
+		
+    }
+	function UserAction() {
+	alert('test');
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+         if (this.readyState == 4 && this.status == 200) {
+             alert(this.responseText);
+			 document.getElementById('Hindustan Petroleum').innerHTML="location"
+         }
+    };
+    xhttp.open("GET", "http://puppygifs.tumblr.com/api/read/json", true);
+    xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.send("Your JSON Data Here");
+}
+    </script>
+
+</body>
+</html>

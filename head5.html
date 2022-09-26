@@ -1,0 +1,109 @@
+<html>
+<body>
+
+
+ <form>
+  <div class="imgcontainer">
+  <style>
+body {
+  background-image: url('img4.webp');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+  <br>
+  <h1>CARD DETAILS</h1>
+  </div>
+  <br>
+  <style>
+h1 {text-align: center;}
+h2 {text-align: center;}
+p {text-align: center;}
+</style>
+  <div class="container">
+  <h2>PAYMENT</h2>
+
+<center>
+  <div class="card-details"> 
+
+        <p>Pay using Credit or Debit card</p> 
+
+  
+
+        <div class="card-number"> 
+
+          <label> Card Number </label> 
+
+          <input
+
+            type="text"
+
+            class="card-number-field"
+
+            placeholder="###-###-###"/> 
+
+        </div> 
+
+        <br /> 
+
+        <div class="date-number"> 
+
+          <label> Expiry Date </label> 
+
+          <input type="text" class="date-number-field" 
+
+                 placeholder="DD-MM-YY" /> 
+
+        </div> 
+
+  	<br>
+
+        <div class="cvv-number"> 
+
+          <label> CVV number </label> 
+
+          <input type="text" class="cvv-number-field" 
+
+                 placeholder="xxx" /> 
+
+        </div> 
+	<br>
+
+        <div class="nameholder-number"> 
+
+          <label> Card Holder name </label> 
+
+          <input
+
+            type="text"
+
+            class="card-name-field"
+
+            placeholder="Enter your Name"/> 
+
+        </div> 
+	<br>
+        <button type="button" 
+		onclick="pay()"
+
+                class="submit-now-btn"> 
+
+          submit
+ </button> 
+
+
+      </div> 
+</center>
+<br>
+</form> 
+<script>
+    function pay()
+    {
+    	//location.replace("file:///C:/Users/user/Desktop/fff/head2.html")
+		location.href="./head6.html"
+    }
+    </script>
+
+</body>
+</html>
